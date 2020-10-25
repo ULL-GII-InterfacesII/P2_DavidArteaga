@@ -20,5 +20,21 @@ Como se puede apreciar en la imagen esta vez la esfera sí se ve afectada por la
 
 ![Error](/images/BothWithPhysics.png)
 
+Al tener ambos físicas se caen por su propio peso
 
+### La esfera y el cubo son físicos y la esfera tiene 10 veces la masa del cubo
+
+Para aumentar la masa incrementamos el valor de la variable Mass del Component RigidBody en el inspector de objetos
+
+![Error](/images/SphereMass.png)
+
+### La esfera tiene físicas y el cubo es de tipo IsTrigger
+
+Para convertir al cubo en tipo IsTrigger seleccionamos la casilla del Component BoxCollider que encontraremos también en el inspector de objetos
+
+![Error](/images/CubeIsTrigger.png)
+
+Al no contar con físicas el cubo se quedara flotando igual que antes
+
+![Error](/images/CubeIsTriggerNoPhysics.png)
 
