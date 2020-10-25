@@ -54,9 +54,11 @@ y en la sección `constraints` marcamos las casillas correspondientes.
 
 El resultado será este: 
 
-![Error](/images/CubeIsTriggerWithPhysics.gif)
+![Error](/images/CubeRotationFreezed.gif)
 
 El cubo cae y colisiona en el plano sin embargo al no poder rotar en el plano XZ este se queda quieto sobre su esquina.
+
+
 
 
 
