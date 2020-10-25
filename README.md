@@ -36,6 +36,6 @@ Para convertir al cubo en tipo IsTrigger seleccionamos la casilla del Component 
 
 Al no contar con físicas el cubo se quedara flotando igual que antes
 
-![Error](/images/CubeIsTriggerNoPhysics.png)
+![Error](/images/CubeIsTriggerWithNoPhysics.png)
 
 
