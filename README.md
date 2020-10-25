@@ -34,8 +34,16 @@ Para convertir al cubo en tipo IsTrigger seleccionamos la casilla del Component 
 
 ![Error](/images/CubeIsTrigger.png)
 
-Al no contar con físicas el cubo se quedara flotando igual que antes
+Al no contar con físicas el cubo se quedara flotando igual que antes:
 
 ![Error](/images/CubeIsTriggerWithNoPhysics.png)
+
+### La esfera tiene físicas, el cubo es de tipo IsTrigger y tiene físicas
+
+![Error](/images/CubeIsTriggerWithPhysics.gif)
+
+Como podemos apreciar al aplicar físicas al cubo de tipo IsTrigger este cae porque se le aplica la fuerza de la gravedad, sin embargo no colisiona 
+con ningún objeto en su recorrido.
+
 
 
