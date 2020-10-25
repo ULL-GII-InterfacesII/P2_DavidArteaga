@@ -38,3 +38,4 @@ Al no contar con físicas el cubo se quedara flotando igual que antes
 
 ![Error](/images/CubeIsTriggerNoPhysics.png)
 
+
