@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject player;
     public Transform transform;
-    public float zMove, xMove;
+    public bool zMove, xMove;
+    public float yRotation;
     public float playerSpeed;
     
     // Start is called before the first frame update
@@ -23,10 +24,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xMove = Input.GetAxis("Horizontal");
-        zMove = Input.GetAxis("Vertical");
+        xMove = Input.GetButton("Horizontal");
+        zMove = Input.GetKey("w");
+        yRotation = Input.GetAxis("Horizontal");
 
-        transform.position = player.transform.position + new Vector3(xMove, 0, zMove) * playerSpeed * Time.deltaTime;
+        if(zMove)
+            transform.position = player.transform.position + Vector3.forward * playerSpeed * Time.deltaTime;
+        if (xMove)
+            transform.Rotate(0, yRotation, 0);
     }
 
 }
