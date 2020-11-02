@@ -5,11 +5,11 @@ using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class SecondPlayerController : MonoBehaviour
 {
     public GameObject player;
     public Transform transform;
-    public bool zMove, xMove;
+    private bool zMove, zBackMove, xMove;
     public float yRotation;
     public float playerSpeed;
     public float rotationSpeed;
@@ -27,14 +27,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xMove = Input.GetButton("Horizontal");
-        zMove = Input.GetKey("w");
-        yRotation = Input.GetAxis("Horizontal");
+        xMove = Input.GetButton("Horizontal-JL");
+        zMove = Input.GetKey("i");
+        zBackMove = Input.GetKey("m");
+        yRotation = Input.GetAxis("Horizontal-JL");
 
         if (zMove)
             transform.Translate(Vector3.forward * playerSpeed * Time.deltaTime);
+        else if(zBackMove)
+            transform.Translate(-Vector3.forward * playerSpeed * Time.deltaTime);
         if (xMove)
             transform.Rotate(0, yRotation * rotationSpeed, 0);
     }
+
+
 
 }
