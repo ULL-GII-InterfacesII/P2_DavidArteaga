@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject player;
     public Transform transform;
-    public bool zMove, xMove;
+    public bool zMove, zBackMove, xMove;
     public float yRotation;
     public float playerSpeed;
     public float rotationSpeed;
@@ -29,10 +29,13 @@ public class PlayerController : MonoBehaviour
     {
         xMove = Input.GetButton("Horizontal");
         zMove = Input.GetKey("w");
+        zBackMove = Input.GetKey("s");
         yRotation = Input.GetAxis("Horizontal");
 
         if (zMove)
             transform.Translate(Vector3.forward * playerSpeed * Time.deltaTime);
+        else if (zBackMove)
+            transform.Translate(-Vector3.forward * playerSpeed * Time.deltaTime);
         if (xMove)
             transform.Rotate(0, yRotation * rotationSpeed, 0);
     }
