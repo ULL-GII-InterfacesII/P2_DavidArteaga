@@ -70,6 +70,8 @@ Debido a que el jugador no cuenta con físicas, Utilizamos el Transform del game
 
 ![Error](/images/PlayerSpeed.png)
 
+![Error](/images/PlayerMoving.gif)
+
 ## 3. Sobre la escena que has trabajado programa los scripts necesarios para las siguientes acciones:
 
 ### Se deben incluir varias esferas sobre la escena. Cada vez que el objeto jugador colisione con una esfera se debe cambiar su color, y si se trata de una esfera de tipo A, y se pulsa la barra espaciadora el jugador impulsa la esfera hacia fuera de él. 
