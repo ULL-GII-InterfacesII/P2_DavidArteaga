@@ -84,6 +84,8 @@ del objeto que colisiona sea "Player" y el del objeto que tiene el script asocia
 
 ![Error](/images/SphereChangingColor.gif)
 
+![Error](/images/SphereAScript.gif)
+
 ### Se deben incluir cilindros que se alejen del jugador cuando esté próximo. 
 
 ![Error](/images/CylinderScript.png)
@@ -99,7 +101,7 @@ Primero deberemos crear nuevas entradas en el Input Manager, las llamaremos `Hor
 
 ![Error](/images/SecondPlayerControllerScript.png)
 
-### Debes ubicar cubos que que aumentan de tamaño cuando se le acerca una esfera y que disminuye cuando se le acerca el jugador. 
+### Debemos ubicar cubos que aumentan de tamaño cuando se le acerca una esfera y que disminuye cuando se le acerca el jugador. 
 
 ![Error](/images/ExpandScript.png)
 
